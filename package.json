@@ -1,9 +1,10 @@
 {
-  "name": "component",
+  "name": "LabelTree",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "haohao809 <haohao809@126.com>",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -15,6 +16,7 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "array-includes": "^3.0.3",
     "autoprefixer": "^7.1.2",
     "axios": "^0.18.0",
     "babel-core": "^6.22.1",
@@ -28,12 +30,15 @@
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
+    "define-properties": "^1.1.2",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
+    "foreach": "^2.0.5",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.7.2",
+    "object-keys": "^1.0.11",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",

@@ -45,15 +45,14 @@ export default {
   },
   methods: {
   	_getMapLabel(){
-  		 getMapLabel().then((res) =>{
-  		 		if(res.ret===0){
-  		 			console.log('success');
-  		 		  var list =	res.type_list[0].children;
-  		 		  console.log(list);
+		 getMapLabel().then((res) =>{
+		 			console.log('success');  		 			
+		 		  var list =res.list.type_list[0].children;
+		 		  console.log(list);
 //		 		  this.treeList = list
-  		 		  this.initTree(list);
-  		 		}
-  		 })
+		 		  this.initTree(list);
+
+		 })
   	},
   	initTree(list){
   		list.forEach((item,index) =>{

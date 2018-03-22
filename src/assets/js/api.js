@@ -4,7 +4,9 @@ import Axios from "axios";
 
 //获取接口API
 export function getMapLabel(){
-	const url = "http://dtv.homed.me:12890/homed/release/get_list?label=0&accesstoken=TOKEN3120";
+	
+//	build/webpack.dev.conf.js配置的express服务，使用本地数据。上线的话，用户配置真实接口
+	const url = '/api/getData';
 	return Axios({
 		method: 'GET',
 		url: url
