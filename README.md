@@ -1,3 +1,5 @@
+效果
+![Image text](https://github.com/haohao809/columnTree/blob/master/build/simple.png)
 # component
 
 > A Vue.js project
